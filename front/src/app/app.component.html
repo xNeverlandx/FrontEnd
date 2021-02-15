@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="page-wrapper">
+  <div class="data-wrapper">
+    <div class="input-wrapper">
+      <app-search-form (submitEvent)="receiveSubmit($event)" (idInputEvent)="receiveIdInput($event)" (dateInputEvent)="receivedDateInput($event)"></app-search-form>
+
+    </div>
+    <div class="content-wrapper">
+      <app-data-table [idInput]="idInput" [dateInput]="dateInput" [persons]="persons" ></app-data-table>
+    </div>
+  </div>
+</div>
+

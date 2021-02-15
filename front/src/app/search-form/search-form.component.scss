@@ -1,0 +1,20 @@
+form {
+  display: flex;
+  flex-direction: row;
+
+  input {
+    padding: 4px 0;
+
+
+    width: 20%;
+  }
+
+
+  input:nth-child(1) {
+    margin-right: 6px;
+  }
+
+  input:nth-child(2) {
+    margin: 0 12px 0 6px;
+  }
+}

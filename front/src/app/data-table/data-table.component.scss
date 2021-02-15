@@ -1,0 +1,39 @@
+table {
+
+  display: flex;
+  flex-direction: column;
+
+  thead {
+    margin: 12px 0;
+
+    tr {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+
+      th {
+        width: 100%;
+        padding: 4px 24px;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      padding: 4px 0;
+      margin: 1px 0;
+
+      td {
+        padding: 4px 24px;
+        width: 100%;
+        word-break: break-word;
+
+        align-content: space-evenly;
+      }
+    }
+  }
+}

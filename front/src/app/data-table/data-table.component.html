@@ -1,0 +1,22 @@
+<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Gender</th>
+    <th>Date of Birth</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let person of persons">
+    <td>{{person.getId()}}</td>
+    <td>{{person.getFirstName()}}</td>
+    <td>{{person.getLastName()}}</td>
+    <td>{{person.getGender() === 0 ? 'FEMALE' : "MALE"}}</td>
+    <td>{{dayjs(person.getDateOfBirth()).format('YYYY-MM-DD')}}</td>
+  </tr>
+  </tbody>
+</table>
+
+
